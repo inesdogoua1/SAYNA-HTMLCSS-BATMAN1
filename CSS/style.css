@@ -1,0 +1,374 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');*/
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(../Police/Rajdhani-Medium.ttf);
+}
+
+:root{
+    --yellow-color:#FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #19587D;
+    --white-color: #ffff;
+    --gradient-white: #eddebf66;
+    --gradient-red: #89000978;
+    --black-color:#000;
+    --gradient-gray: #19587d88;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+   
+p{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+button{font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    body{
+        background-color: black;
+               color: white;
+        font-family: 'Space Grotesk';
+        font-family: 300;
+    }
+.up-bar{
+    border-top: #727272 2px solid;
+    position: relative;
+    top:132px;
+    width: 85%;
+    left: 102px;
+}
+
+.left-bar{
+    
+    border-left: #727272 5px solid;
+    position: relative;
+    left: 102px;
+}
+    /*design de la navigation*/
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    ul{
+        list-style: none;
+    }
+  nav  ul a{
+color: var(--white-color);
+font-size: 30px;
+font-weight: 500;
+font-family: 'rajdhani';
+/*text-decoration: none;*/
+    }
+
+      nav ul a:hover{
+        color: var(--yellow-color);
+        
+    }
+
+    .logo :hover{
+        
+       -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg);
+       filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg);
+    }
+    /*design de la partie en tête hero*/
+    #hero{
+        background-image: url(../Illustrations/Bathome1.png);
+        height: 800px;
+        background-position: top center;
+        background-repeat: none;
+        background-color: #19587D;
+        background-size: cover;
+      
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 150px;
+    }
+
+    #hero .titre{
+        margin: 20px 0;
+    }
+
+    .btn{
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 22px;
+        padding: 10px 40px;
+        margin-top: 10px;
+        background: linear-gradient(
+            80deg,var(--gradient-white),var(--gradient-red)
+        );
+        box-shadow: var(--black-color) 5px 5px 60px;
+    }
+    #hero .fleche{
+        display: block;
+        margin: 0 auto;        
+        margin-top: 285px;
+    }
+
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 80px;
+        top: 230px;
+    }
+
+    .scroll .social{
+        margin-top: 15px;
+    }
+    /*design de la section batman-personnage*/
+    
+    #batman-cinema, #nemesis, #allies, #batman-justice-league{
+        margin-top: 40px;
+
+    }
+    .batman-personnage{
+        display: flex;
+        justify-content: space-between;
+      }
+      #batman-cinema .titre, #nemesis .titre, #allies .titre, #batman-justice-league .titre{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 30px 0;
+      }
+
+      #batman-cinema .description, #nemesis .description, #allies .description, #batman-justice-league .description{
+        margin-bottom: 40px;
+        text-align: justify;
+        width: 80%;
+        font-size: 23px;
+      }
+
+      #batman-cinema .personnage-info, #nemesis .personnage-info, #allies .personnage-info {
+        text-align: center;
+      }
+
+      #batman-cinema .personnage-date, #nemesis .personnage-date, #allies .personnage-date {
+        text-align: center;
+      }
+      .personnage{
+        margin-bottom: 20px;/*ajuster l'espace entre les personnages*/
+      }
+      .image-container{
+        float: left;/*faire flotter l'image à gauche*/
+        margin-right: 20%;/*ajuster l'espace entre l'image et le texte*/
+      }
+      
+      
+    /*design de la section nemesis*/
+    .nemesis-personnage{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*design de la section allies*/
+    .les-allies{
+        display: flex;
+        justify-content: space-between;
+    }
+     /*design de la section justice-league*/
+     .justice-league{
+        display: flex;
+        
+    }
+    /*design de la partie multimedia*/
+    #multimedia button{
+        position: relative;
+        top: 155px;
+        background: none;
+        border: none;
+    }
+
+    #multimedia button.right{
+        right: -85%;
+    }
+
+
+    #multimedia .slider-multimedia{
+        display: flex;
+        width: 50%;
+        margin: 40px auto;
+    }
+
+    #multimedia .slider-image{
+        width: 100%;
+    }
+
+    #multimedia .slider-content{
+        padding: 15px;
+        background-color: #727272;
+        /*border-radius: 20px;*/
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-decoration: none;
+        color: var(--white-color);
+        font-size: 22px;
+        padding: 10px 40px;
+        margin-top: 10px;
+        background: linear-gradient(
+            80deg,var(--gradient-white),var(--gradient-gray)
+        );
+        box-shadow: var(--black-color) 4px 4px 60px;
+    }
+#multimedia p{
+    font-size: 12px;
+}
+
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+/*design de la partie formulaire*/
+
+#contact{
+    background: linear-gradient(
+            80deg,var(--gradient-white),var(--gradient-gray)
+        );
+        padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type='email'], textarea, .frequence{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgba(35, 34, 34, 0.137);
+    background-color: transparent;
+    padding: 10px 0;    
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgba(35, 34, 34, 0.137);   
+}
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+    
+}
+
+::placeholder{
+    color:#F8F184;
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.form input[type='radio'] {
+    opacity: 0;
+}
+
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(
+        69deg,rgba(35, 34, 34, 0.137),#727272
+    ) 1;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.form input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 15px auto;
+    cursor: pointer;
+    color: var(--white-color);
+        font-size: 22px;
+        padding: 10px 40px;
+        margin-top: 10px;
+        background: linear-gradient(
+            80deg,var(--gradient-white),var(--gradient-red)
+        );
+        box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+#citation{
+    margin: 90px;
+}
+
+#citation .citation-carte {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+#citation .citation-texte{
+    text-align: center;
+}
+
+#citation .citation-auteur{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'rajdhani';
+}
+
+#citation .guillemet-close{
+    float: right;
+
+}
+/*design du footer*/
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item{
+    padding: 15px;
+}
